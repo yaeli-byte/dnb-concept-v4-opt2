@@ -74,7 +74,7 @@ h1 img{display:block;width:496px;height:auto;margin:0 auto}
 .stat .cap{display:flex;direction:rtl;justify-content:flex-start;align-items:flex-start;gap:9px;margin-top:12px}
 .stat .cap .txt{font-size:14px;line-height:1.35;color:var(--gray);text-align:right;font-weight:400}
 .node{flex:none;width:21px;height:21px;border-radius:50%;background:var(--mint);color:#fff;
-  font-size:14px;line-height:21px;text-align:center;font-weight:500}
+  font-size:15px;font-weight:500;display:flex;align-items:center;justify-content:center;line-height:1;padding-bottom:1px}
 
 /* ---------- solutions ---------- */
 .sol{position:relative;z-index:2;width:1214px;margin:0 auto;padding-top:170px}
@@ -93,12 +93,14 @@ h1 img{display:block;width:496px;height:auto;margin:0 auto}
 .txtblock h3{font-size:31px;font-weight:600;color:var(--navy);margin-top:20px;line-height:1.15}
 .txtblock p{font-size:15px;line-height:1.6;color:var(--gray);margin-top:16px;font-weight:400}
 .txtblock .foot{margin-top:auto;align-self:flex-end;direction:ltr;display:flex;align-items:center;gap:9px;
-  color:#5b636d;font-size:16px;font-weight:500}
-.txtblock .foot .rm{height:24px;display:block}
-/* wide card = text (left) + graphic (right, bleeds to edges) */
+  color:#5b636d;font-size:16px;font-weight:500;cursor:pointer;transition:color .18s ease}
+.txtblock .foot .rm{height:24px;display:block;transition:transform .18s ease}
+.txtblock .foot:hover{color:var(--blue)}
+.txtblock .foot:hover .rm{transform:translateX(-4px)}
+/* wide card = text (left) + graphic tile (right), tile is a rounded tile ON the gray card */
 .wide{display:flex;direction:ltr}
 .wide .txtblock{flex:1;order:1}
-.wide .gfx{flex:none;order:2;height:100%}
+.wide .gfx{flex:none;order:2;height:100%;display:flex;align-items:center;padding:16px 16px 16px 2px}
 .wide .gfx img{height:100%;width:auto;display:block}
 </style>
 </head>
