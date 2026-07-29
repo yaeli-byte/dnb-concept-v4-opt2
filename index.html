@@ -51,7 +51,10 @@ nav a .car{font-size:10px;color:#8a8a8a;margin-top:2px}
 .wave{position:absolute;top:172px;left:0;width:1440px;height:auto;z-index:1;pointer-events:none}
 .hero-in{position:relative;z-index:3;text-align:center;padding-top:56px}
 .cluster{display:flex;justify-content:center;margin-bottom:26px}
-.cluster img{height:26px;display:block}
+.cluster span{background:#fff;border:1px solid #cfe0ee;color:#5b6b7a;font-size:14px;font-weight:500;
+  border-radius:20px;padding:5px 16px;margin-left:-14px;white-space:nowrap;
+  box-shadow:0 1px 2px rgba(20,60,110,.05)}
+.cluster span:first-child{margin-left:0}
 h1{margin:0}
 h1 img{display:block;width:496px;height:auto;margin:0 auto}
 .hero-sub{max-width:378px;margin:20px auto 0;font-size:14px;line-height:1.6;color:#5c6773;font-weight:400}
@@ -130,7 +133,9 @@ h1 img{display:block;width:496px;height:auto;margin:0 auto}
   <section class="hero">
     <img class="wave" src="assets/wave.png" alt="">
     <div class="hero-in">
-      <div class="cluster"><img src="assets/cluster.png" alt=""></div>
+      <div class="cluster">
+        <span>נהלו סיכונים</span><span>הצמיחו את העסק</span><span>שלטו בהוצאות</span>
+      </div>
       <h1><img src="assets/headline.svg" alt="הופכים נתונים להחלטות עסקיות חכמות"></h1>
       <p class="hero-sub">גישה למאגר המודיעין העסקי המקיף בישראל. נהלו סיכונים, אתרו הזדמנויות צמיחה ובנו קשרים עסקיים מבוססי אמון.</p>
       <a class="cta cta-btn" href="#"><img class="ic" src="assets/cta-icon.png" alt=""><span class="lbl">צור קשר</span></a>
