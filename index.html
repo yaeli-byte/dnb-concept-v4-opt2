@@ -54,7 +54,8 @@ nav a:hover .car{color:#ABABAB}
 /* ---------- hero ---------- */
 .hero{position:relative;height:772px;z-index:1}
 /* hero background video (Figma frame 158-9414, sized to the section): sits above the dot grid, behind the hero text/CTA. Top aligned to the page top (video top = -88px inside .hero, which starts at page y88). Its own clip is 982px tall — the wave's true deepest extent (incl. soft shadow) is page-y 981, measured across all 147 frames — so nothing is cut. The stats card (z-index 2, top 976) covers the last few px, so there's no hard edge. */
-.wave{position:absolute;top:-88px;left:0;width:1440px;height:982px;overflow:hidden;z-index:1;pointer-events:none}
+/* hero background video: 2× source (2880×2740) shown at 1440px for retina-crisp; sits above the dot grid, behind hero text/CTA. Top-aligned to page (top:-88 inside .hero which starts at page y88). Clip height 976 = stats-card top: full wave (deepest excursion page-y 908) shows, no cut, and the opaque stats card (z2) covers anything below. */
+.wave{position:absolute;top:-88px;left:0;width:1440px;height:976px;overflow:hidden;z-index:1;pointer-events:none}
 .wave video{display:block;width:1440px;height:auto}
 .hero-in{position:relative;z-index:3;text-align:center;padding-top:56px}
 .cluster{position:relative;width:371px;height:25px;margin:0 auto 26px}
@@ -141,7 +142,7 @@ h1 img{display:block;width:496px;height:auto;margin:0 auto}
 
   <!-- HERO -->
   <section class="hero">
-    <div class="wave"><video src="assets/ribbon.mp4?v=2" autoplay muted loop playsinline></video></div>
+    <div class="wave"><video src="assets/ribbon.mp4?v=3" autoplay muted loop playsinline></video></div>
     <div class="hero-in">
       <div class="cluster">
         <img class="cbg" src="assets/cluster.svg" alt="">
